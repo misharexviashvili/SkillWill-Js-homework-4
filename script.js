@@ -24,3 +24,16 @@ const capitalizer = function (string) {
   const capitalizedSentence = array.join(" ");
   return capitalizedSentence;
 };
+
+// Task 3
+const person = [
+  { name: "Lasha", age: 30 },
+  { name: "Saba", age: 20 },
+  { name: "Givi", age: 25 },
+];
+const sorter = function (array) {
+  array.sort((a, b) => {
+    return a.age - b.age;
+  });
+  console.log(array);
+};
